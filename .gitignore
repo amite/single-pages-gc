@@ -1,0 +1,6 @@
+css/*
+*.sublime-project
+.sass-cache
+.sass-cache/*
+gc.sublime-workspace
+.DS_Store
