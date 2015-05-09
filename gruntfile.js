@@ -4,19 +4,20 @@ module.exports = function(grunt) {
       pkg: grunt.file.readJSON('package.json'),
       watch: {
           sass: {
-              files: ['src/*.scss'],
-              tasks: 'sass'
+            files: ['src/*.scss'],
+            tasks: 'sass'
           },
       },
       sass: {
           dist: {
-              options: {
-                style: 'expanded',
-                sourcemap: 'auto',
-              },
-              files: {
-                  'css/site.css': 'src/site.scss'
-              }
+            options: {
+              style: 'expanded',
+              sourcemap: 'auto',
+              require: 'susy'
+            },
+            files: {
+                'css/site.css': 'src/site.scss'
+            }
           }
       },
   });
